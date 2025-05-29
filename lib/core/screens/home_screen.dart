@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/instance_manager.dart';
+import 'package:get/route_manager.dart';
 import 'package:note_new/controller/home_controller.dart';
+import 'package:note_new/core/screens/note_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -130,6 +132,13 @@ class HomeScreen extends StatelessWidget {
           );
         }
       }),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Get.to(() => NoteScreen());
+        },
+        shape: CircleBorder(),
+        child: Icon(Icons.add, color: Color(0xff040404)),
+      ),
     );
   }
 }
