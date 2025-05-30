@@ -1,6 +1,4 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/instance_manager.dart';
 import 'package:get/route_manager.dart';
@@ -49,6 +47,7 @@ class HomeScreen extends StatelessWidget {
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
+                  // ignore: deprecated_member_use
                   color: Colors.white.withOpacity(.1),
                 ),
                 child: Column(
@@ -62,6 +61,7 @@ class HomeScreen extends StatelessWidget {
                     Text(
                       "Macs do not have a built-in clipboard history feature; they only store the most recent item copied. To manage clipboard history, you can use third-party clipboard manager apps like ClipBook or Paste, which allow you to access and store multiple copied items.",
 
+                      // ignore: deprecated_member_use
                       style: TextStyle(color: Colors.white.withOpacity(.5)),
                       maxLines: 5,
                       overflow: TextOverflow.ellipsis,
@@ -71,6 +71,7 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         Icon(
                           Icons.timer_sharp,
+                          // ignore: deprecated_member_use
                           color: Colors.white.withOpacity(.5),
                         ),
                         Spacer(),
